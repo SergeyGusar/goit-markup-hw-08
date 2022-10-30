@@ -1,0 +1,63 @@
+/* чим займаемось */
+
+.section-we-do {
+    padding-top: 94px;
+    padding-bottom: 0px;
+    position: relative;
+  }
+  
+  .container-we-do {
+    width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  
+  .we-do-title {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.16;
+    letter-spacing: 0.03em;
+    text-align: center;
+    color: var(--secondary-color);
+    margin-bottom: 50px;
+  }
+  
+  .product-work {
+    display: flex;
+    position: absolute;
+    top: 0;
+    left: 0;
+    content: "";
+    width: 370px;
+  }
+  
+  .we-do-list {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    padding-inline-start: 0px;
+  }
+  .img-block {
+    display: block;
+    width: 370px;
+  }
+  .we-do-work {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  
+    width: 370px;
+    height: 70px;
+    bottom: 0;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14px;
+  
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: var(--text-color);
+    background: rgba(47, 48, 58, 0.8);
+  }

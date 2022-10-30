@@ -1,0 +1,63 @@
+:root {
+    --primary-color: #757575;
+    --secondary-color: #212121;
+    --text-color: #ffffff;
+    --logo-color: #000000;
+    --accent-color: #2196f3;
+    --footer-color: #2f303a;
+    --background-body: #f5f5f5;
+    --background-team: #f5f4fa;
+    --header-border-bottom: #ececec;
+    --border-color-clients-icon: #afb1b8;
+    --hover-focus-color: #188ce8;
+    --hero-background: #2f303a;
+    --transition-property: cubic-bezier(0.4, 0, 0.2, 1);
+    --color-address-footer: rgba(255, 255, 255, 0.6);
+    --background-color-icon-footer: rgba(255, 255, 255, 0.1);
+    --box-shadow: rgba(0, 0, 0, 0.15);
+    --hero-background:  rgba(47, 48, 58, 0.4);
+    --backdrop-background: rgba(0, 0, 0, 0.2);
+    --input-textarea-border: rgba(33, 33, 33, 0.2);
+    --footer-icon-link: rgba(255, 255, 255, 0.1);
+    --input-placeholder: rgba(255, 255, 255, 0.6);
+    --background-overlay-text: rgba(33, 150, 243, 0.9);
+    --portfolio-text-border:  #eeeeee;
+  }
+  
+  h1,
+  h2,
+  h3,
+  ul,
+  p {
+    margin: 0;
+    padding: 0;
+  }
+  button {
+    font-family: inherit;
+    padding: 0;
+    margin: 0;
+    border: none;
+  }
+  
+  img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+  }
+
+  
+  li {
+    list-style-type: none;
+  }
+  
+  .visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    padding: 0;
+    overflow: hidden;
+    border: 0;
+    clip: rect(0 0 0 0);
+  }
+  

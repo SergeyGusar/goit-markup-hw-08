@@ -1,0 +1,36 @@
+/* footer */
+
+.footer-container {
+  max-width: 480px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+    // margin: 0 auto;
+    // display: flex;
+    // align-items: baseline;
+  }
+  
+  .footer {
+    padding-bottom: 60px;
+    padding-top: 60px;
+  
+    @media screen and ( min-width: 768px) {
+      padding-bottom: 60px;
+    padding-top: 60px;
+    }
+  
+    @media  screen and ( min-width: 1600px) {
+      padding-bottom: 94px;
+    padding-top: 94px;
+    }
+  
+    // margin-left: auto;
+    // margin-right: auto;
+    // padding-left: 15px;
+    // padding-right: 15px;
+
+    background: var(--footer-color);
+  
+  }
+  

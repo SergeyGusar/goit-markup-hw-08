@@ -1,0 +1,209 @@
+/* Modal */
+.backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: var(--backdrop-background);
+  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), visibility 250ms;
+}
+.is-hidden {
+  opacity: 0;
+  pointer-events: none;
+  visibility: hidden;
+}
+
+.modal {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  min-width: 528px;
+  max-height: 581px;
+  padding: 40px;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
+  background: var(--text-color);
+}
+.modal-form {
+  margin-top: 12px;
+}
+
+.modal .close-button {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 30px;
+  height: 30px;
+  top: 8px;
+  right: 8px;
+  cursor: pointer;
+  border-radius: 50%;
+  background-color: var(--text-color);
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover,
+  &:focus {
+  fill: var(--accent-color);
+}
+}
+
+.modal-title {
+  padding-top: 12px;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 1.15px;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--secondary-color);
+}
+.form-element {
+  display: flex;
+  flex-direction: column;
+  margin-top: 10px;
+  cursor: pointer;
+}
+.form-element label {
+  padding-top: 10px;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.16px;
+
+  letter-spacing: 0.01em;
+  color: var(--primary-color);
+}
+.accept label {
+  display: contents;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71px;
+  letter-spacing: 0.03em;
+
+  color: var(--primary-color);
+}
+.input-wrap {
+  position: relative;
+  padding-top: 4px;
+}
+
+.form-element svg {
+  position: absolute;
+  top: 28px;
+  left: 12px;
+  transform: translateY(-50%);
+}
+
+.form-element input {
+  width: 100%;
+  height: 40px;
+  padding-left: 42px;
+  margin-top: 4px;
+  border: 1px solid var(--input-textarea-border);
+  border-radius: 4px;
+  outline: none;
+  transition-property: border, fill, svg;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:focus {
+  border: 1px solid var(--accent-color);
+ }
+  &:focus + svg {
+  fill: var(--accent-color);
+ }
+}
+.form-element textarea {
+  font-weight: 400;
+  font-size: 12px;
+  /* line-height: 1.7px; */
+  letter-spacing: 0.01em;
+  padding: 12px 16px;
+  height: 138px;
+  /* color: rgba(117, 117, 117, 0.5); */
+  border: 1px solid var(--input-textarea-border);
+  border-radius: 4px;
+  margin-top: 10px;
+  resize: none;
+  transition-property: border;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:focus {
+  outline: none;
+  border: 1px solid var(--accent-color);
+  } 
+}
+
+.accept {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+  padding: 0 11px;
+}
+.checkbox-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 16px;
+  height: 15px;
+  margin-right: 7px;
+  cursor: pointer;
+  border: 2px solid var(--secondary-color);
+  border-radius: 2px;
+  transition-property: background, border;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+.accept input:checked + .checkbox-btn {
+  background: var(--accent-color);
+  border: 0.2px solid var(--accent-color);
+}
+.agree {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71px;
+  letter-spacing: 0.03em;
+
+  &:link {
+  margin-left: 5px;
+  text-decoration-line: underline;
+  color: var(--accent-color);
+  }
+}
+.submit-text {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.88px;
+  letter-spacing: 0.06em;
+  color: var(--text-color);
+}
+.submit-modal {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+
+  width: 200px;
+  height: 50px;
+  margin: 30px auto 40px;
+  background-color: var(--accent-color);
+  border-radius: 4px;
+
+  transition-property: background-color, box-shadow;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover {
+  background: var(--accent-color);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+}
+}

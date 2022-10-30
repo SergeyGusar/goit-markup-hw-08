@@ -1,0 +1,113 @@
+/* Наша Команда */
+
+.section-team {
+  padding-bottom: 60px;
+  padding-top: 60px;
+
+  @media screen and ( min-width: 768px) {
+    padding-bottom: 60px;
+  padding-top: 60px;
+  }
+
+  @media  screen and ( min-width: 1600px) {
+    padding-bottom: 94px;
+  padding-top: 94px;
+  }
+    background: var(--text-color);
+  }
+  
+  .container-team {
+    max-width: 480px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+    // display: flex;
+
+  }
+  .team-title {
+    margin-bottom: 50px;
+  }
+  
+  .team-list {
+    // display: flex;
+    justify-content: center;
+    gap: 30px;
+    padding-inline-start: 0px;
+  }
+  
+  .team-item {
+    margin-bottom: 30px;
+    flex-basis: 270px;
+    background-color: var(--main-light-color);
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+      0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 0px 0px 4px 4px;
+  }
+  
+  .team-img {
+    display: block;
+    width: 450px;
+  }
+  
+  .team-member {
+    padding: 30px 30px;
+  }
+  
+  .team-title {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.16;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: var(--secondary-color);
+    
+  }
+  
+  .teams-text {
+    color: var(--primary-color);
+    font-size: 16px;
+    line-height: 1.19;
+    letter-spacing: 0.03em;
+    text-align: center;
+    margin-top: 10px;
+  }
+  .team-people {
+    color: var(--secondary-color);
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.19;
+    letter-spacing: 0.03em;
+    text-align: center;
+  }
+  .icon-social {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin-top: 16px;
+  }
+  
+  .icon-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    color: var(--border-color-clients-icon);
+    transition-property: color, border-radius;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+  
+   &:hover,
+   &:focus {
+    background-color: var(--accent-color);
+    color: var(--text-color);
+   }
+  }
+  .icon-svg {
+    fill: currentColor;
+  }
+  

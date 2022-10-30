@@ -1,0 +1,20 @@
+  /* body */
+  body {
+    background: var(--background-body);
+    color: var(--primary-color);
+    font-family: "Roboto", sans-serif;
+  }
+
+// portfolio
+
+body {
+    background: var(--text-color);
+    color: var(--secondary-color);
+  }
+  
+  .container-portfolio {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding-right: 15px;
+    padding-left: 15px;
+  }

@@ -22,10 +22,7 @@
     margin-right: auto;
     padding-left: 15px;
     padding-right: 15px;
-    
-    @media  screen and ( min-width: 1600px){
-      display: flex;
-    }
+    // display: flex;
 
   }
   .team-title {
@@ -33,14 +30,12 @@
   }
   
   .team-list {
+    // display: flex;
+    justify-content: center;
+    gap: 30px;
+    padding-inline-start: 0px;
+  }
   
-      // display: flex;
-      justify-content: center;
-      gap: 30px;
-      padding-inline-start: 0px;
-    }
-    
-    
   .team-item {
     margin-bottom: 30px;
     flex-basis: 270px;

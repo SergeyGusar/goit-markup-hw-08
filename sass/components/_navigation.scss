@@ -2,12 +2,14 @@
 /* site-nav */
 
 .header-navigation {
+  
     display: flex;
     align-items: center;
 }
   
   .header-navigation__list {
-    display: flex;
+    display: none;
+    // display: flex;
     align-items: center;
     padding: 32px 0;
     margin-left: 93px;

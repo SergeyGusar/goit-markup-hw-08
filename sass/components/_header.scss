@@ -1,12 +1,33 @@
  /* header */
  .header {
+ width: 480px;
+ 
+
+  @media screen and ( min-width: 768px) {
+    max-width: 767px;
+    max-height: 80px;
+    }
+  
+    @media  screen and ( min-width: 1600px) {
+     max-width: 1200px;
+     padding-top: 32px;
+     padding-bottom: 32px; 
+     display: block;
+    }
   border-bottom: 1px solid var(--header-border-bottom);
   background: var(--text-color);
 
   .header__container {
-    display: block;
-    /* padding-top: 32px;
-    padding-bottom: 32px; */
+
+    // @media  screen and ( min-width: 1600px) {
+    //   max-width: 1200px;
+    // padding-top: 32px;
+    // padding-bottom: 32px; 
+    // display: block;
+   
+     }
+    
+   
     
   }
-}
+

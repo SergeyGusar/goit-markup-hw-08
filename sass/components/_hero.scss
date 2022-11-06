@@ -1,6 +1,6 @@
 /* section hero */
 .hero {
-    max-width: 480px;
+   
     margin-left: auto;
     margin-right: auto;
     padding-left: 15px;
@@ -28,11 +28,13 @@
         }
       
         @media  screen and ( min-width: 1600px) {
+          width: 1600px;
           background-image: linear-gradient(
             var(--hero-background),
             var(--hero-background)
           ),
-          url(../img/studioimg/hero/descktop.jpg);
+          url(../img/studioimg/heroimg.jpg);
+          
 
           padding-top: 200px;
           padding-bottom: 200px;

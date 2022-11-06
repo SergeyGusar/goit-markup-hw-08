@@ -1,14 +1,16 @@
 
 /* Постійні клієнти */
 
-.regular-customers {
+.customers {
  
-  padding-bottom: 60px;
-  padding-top: 60px;
+ margin: 0 auto;
+  
   @media screen and ( min-width: 480px) {
     width: 480px;
     display: flex;
     flex-wrap: wrap;
+    padding-bottom: 60px;
+  padding-top: 60px;
     }
 
  
@@ -18,36 +20,49 @@
     width: 767px;
     display: flex;
     flex-wrap: wrap;
+    padding-bottom: 60px;
+  padding-top: 60px;
   }
 
-  @media  screen and ( min-width: 1600px) {
-    width: 1200px;
+  @media  screen and ( min-width: 1200px) {
+   
     padding-bottom: 94px;
-  padding-top: 94px;
+  padding-top: 50px;
   display: flex;
   justify-content: center;
   align-items: center;
   }
 
   }
-  .customers-title {
+  .customers__title {
     font-weight: 700;
     font-size: 36px;
     line-height: 1.16px;
     text-align: center;
     letter-spacing: 0.03em;
     color: var(--secondary-color);
-    padding-top: 94px;
+    
     padding-bottom: 50px;
 
-    @media screen and ( min-width: 768px) {
-      padding-top: 94px;
-      padding-bottom: 50px;
+    @media screen and ( min-width: 480px) {
+      width: 314px;
+      margin: 60px 83px 30px 83px;
       text-align: center;
+      line-height: 1.17px;
+      }
+
+    @media screen and ( min-width: 768px) {
+      width: 314px;
+      margin: 60px 227px 30px 227px;
+     
+      padding-bottom: 50px;
+      line-height: 1.17px;
+      text-align: center;
+      margin-left: auto;
     }
 
-    @media  screen and ( min-width: 1600px) {
-      width: 1200px;
+    @media  screen and ( min-width: 1200px) {
+      line-height: 1.16px;
       text-align: center;
       padding-top: 94px;
       padding-bottom: 50px;
@@ -56,25 +71,20 @@
 
 
   }
-  .container-customers {
+  .customers__container {
    
-      @media  screen and ( min-width: 1600px) {
-        width: 1200px;
-        padding-bottom: 94px;
-      padding-top: 94px;
-      display: flex;
-      justify-content: center;
-      align-items: center;
+      @media  screen and ( min-width: 1200px) {      
+     
+      padding-bottom: 94px;
       }
    
   }
   
-  .logo-link {
+  .customers__logo-link {
     display: flex;
     justify-content: center;
     align-items: center;
     width: 210px;
-    // height: 92px;
     border: 1px solid;
     border-radius: 4px;
     color: var(--border-color-clients-icon);
@@ -82,7 +92,13 @@
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 
-   
+    @media screen and ( min-width: 768px) {
+     width: 226px;
+    }
+
+    @media screen and ( min-width: 1200px) {
+      width: 170px;
+      }
   
   
   &:hover,
@@ -90,40 +106,56 @@
     color: var(--accent-color);
   }
 }
-  .customers-items {
-    width: 210px;
-    height: 92px;
-    @media screen and ( min-width: 480px) {
-    //  flex-basis: 100% / 2;
+
+
+
+.customers__list {
+  @media screen and ( min-width: 480px) {
+    display: flex;
+    flex-wrap: wrap;
+    }
     
-   
+    @media screen and ( min-width: 768px) {
+      display: flex;
+      flex-wrap: wrap;
+      }
+     
+  @media  screen and ( min-width: 1200px) {
+ 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  }
+ 
+ 
+}
+  .customers__items {
+    
+    height: 92px;
+    padding-left: 15px;
+    
+    @media screen and ( max-width: 480px) {
+      flex-basis: calc((100% - 30px)/2);
+      
       }
 
       @media screen and ( min-width: 768px) {
-      
-        width: 50%;
+        max-width: 737px;
+        flex-basis: calc((100% - 30px)/3);
+       
       }
+
+      @media screen and ( min-width: 1200px) {
+        width: calc((100% - 150px) / 6);
+        justify-content: center;
+        align-items: center;
+        }
     
   }
   
-  .customers-list {
-    
-    
-     
-    @media  screen and ( min-width: 1600px) {
-    width: 1200px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 30px;
-    }
-    // display: flex;
-    // justify-content: center;
-    // align-items: center;
-    // gap: 30px;
-   
-  }
-  .icon-group {
+  
+  .icon__group {
     fill: currentColor;
   }
   

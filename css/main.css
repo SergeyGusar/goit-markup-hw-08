@@ -323,7 +323,6 @@ body {
 }
 
 .container {
-  max-width: 480px;
   margin-left: auto;
   margin-right: auto;
   padding-left: 15px;
@@ -332,17 +331,17 @@ body {
 }
 @media screen and (min-width: 480px) {
   .container {
-    max-width: 320px px;
+    width: 480px;
   }
 }
 @media screen and (min-width: 768px) {
   .container {
-    max-width: 738px;
+    width: 768px;
   }
 }
 @media screen and (min-width: 1600px) {
   .container {
-    max-width: 1200px;
+    width: 1600px;
   }
 }
 
@@ -722,9 +721,13 @@ body {
 
 /* Наша Команда */
 .section-team {
-  padding-bottom: 60px;
-  padding-top: 60px;
   background: var(--text-color);
+}
+@media screen and (min-width: 480px) {
+  .section-team {
+    padding-bottom: 60px;
+    padding-top: 60px;
+  }
 }
 @media screen and (min-width: 768px) {
   .section-team {
@@ -732,7 +735,7 @@ body {
     padding-top: 60px;
   }
 }
-@media screen and (min-width: 1600px) {
+@media screen and (min-width: 1200px) {
   .section-team {
     padding-bottom: 94px;
     padding-top: 94px;
@@ -751,27 +754,50 @@ body {
   margin-bottom: 50px;
 }
 
-.team-list {
-  justify-content: center;
-  gap: 30px;
-  padding-inline-start: 0px;
+@media screen and (min-width: 1200px) {
+  .team-list {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    padding-inline-start: 0px;
+  }
 }
 
 .team-item {
   margin-bottom: 30px;
-  flex-basis: 270px;
   background-color: var(--main-light-color);
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
 }
+@media screen and (min-width: 768px) {
+  .team-item {
+    flex-basis: calc((100% - 30px) / 2);
+  }
+}
+@media screen and (min-width: 1200px) {
+  .team-item {
+    flex-basis: 270px;
+  }
+}
 
 .team-img {
   display: block;
-  width: 450px;
+  display: block;
+}
+@media screen and (min-width: 480px) {
+  .team-img {
+    width: 450px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .team-img {
+    width: 354px;
+  }
 }
 
 .team-member {
-  padding: 30px 30px;
+  padding-top: 30px;
+  padding-bottom: 30px;
 }
 
 .team-title {
@@ -831,73 +857,80 @@ body {
 }
 
 /* Постійні клієнти */
-.regular-customers {
-  padding-bottom: 60px;
-  padding-top: 60px;
+.customers {
+  margin: 0 auto;
 }
 @media screen and (min-width: 480px) {
-  .regular-customers {
+  .customers {
     width: 480px;
     display: flex;
     flex-wrap: wrap;
+    padding-bottom: 60px;
+    padding-top: 60px;
   }
 }
 @media screen and (min-width: 768px) {
-  .regular-customers {
+  .customers {
     width: 767px;
     display: flex;
     flex-wrap: wrap;
+    padding-bottom: 60px;
+    padding-top: 60px;
   }
 }
-@media screen and (min-width: 1600px) {
-  .regular-customers {
-    width: 1200px;
+@media screen and (min-width: 1200px) {
+  .customers {
     padding-bottom: 94px;
-    padding-top: 94px;
+    padding-top: 50px;
     display: flex;
     justify-content: center;
     align-items: center;
   }
 }
 
-.customers-title {
+.customers__title {
   font-weight: 700;
   font-size: 36px;
   line-height: 1.16px;
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--secondary-color);
-  padding-top: 94px;
   padding-bottom: 50px;
 }
+@media screen and (min-width: 480px) {
+  .customers__title {
+    width: 314px;
+    margin: 60px 83px 30px 83px;
+    text-align: center;
+    line-height: 1.17px;
+  }
+}
 @media screen and (min-width: 768px) {
-  .customers-title {
-    padding-top: 94px;
+  .customers__title {
+    width: 314px;
+    margin: 60px 227px 30px 227px;
     padding-bottom: 50px;
+    line-height: 1.17px;
     text-align: center;
+    margin-left: auto;
   }
 }
-@media screen and (min-width: 1600px) {
-  .customers-title {
-    width: 1200px;
+@media screen and (min-width: 1200px) {
+  .customers__title {
+    line-height: 1.16px;
     text-align: center;
     padding-top: 94px;
     padding-bottom: 50px;
   }
 }
 
-@media screen and (min-width: 1600px) {
-  .container-customers {
-    width: 1200px;
+@media screen and (min-width: 1200px) {
+  .customers__container {
     padding-bottom: 94px;
-    padding-top: 94px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
   }
 }
 
-.logo-link {
+.customers__logo-link {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -909,23 +942,34 @@ body {
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-.logo-link:hover, .logo-link:focus {
+@media screen and (min-width: 768px) {
+  .customers__logo-link {
+    width: 226px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .customers__logo-link {
+    width: 170px;
+  }
+}
+.customers__logo-link:hover, .customers__logo-link:focus {
   color: var(--accent-color);
 }
 
-.customers-items {
-  width: 210px;
-  height: 92px;
-}
-@media screen and (min-width: 768px) {
-  .customers-items {
-    width: 50%;
+@media screen and (min-width: 480px) {
+  .customers__list {
+    display: flex;
+    flex-wrap: wrap;
   }
 }
-
-@media screen and (min-width: 1600px) {
-  .customers-list {
-    width: 1200px;
+@media screen and (min-width: 768px) {
+  .customers__list {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .customers__list {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -933,7 +977,30 @@ body {
   }
 }
 
-.icon-group {
+.customers__items {
+  height: 92px;
+  padding-left: 15px;
+}
+@media screen and (max-width: 480px) {
+  .customers__items {
+    flex-basis: calc((100% - 30px) / 2);
+  }
+}
+@media screen and (min-width: 768px) {
+  .customers__items {
+    max-width: 737px;
+    flex-basis: calc((100% - 30px) / 3);
+  }
+}
+@media screen and (min-width: 1200px) {
+  .customers__items {
+    width: calc((100% - 150px) / 6);
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+.icon__group {
   fill: currentColor;
 }
 
@@ -945,11 +1012,26 @@ body {
   padding-left: 15px;
   padding-right: 15px;
 }
+@media screen and (min-width: 1600px) {
+  .footer-container {
+    margin: 0 auto;
+    display: flex;
+    align-items: baseline;
+    padding-bottom: 94px;
+    padding-top: 94px;
+  }
+}
 
 .footer {
   padding-bottom: 60px;
   padding-top: 60px;
   background: var(--footer-color);
+}
+@media screen and (min-width: 480px) {
+  .footer {
+    padding-bottom: 60px;
+    padding-top: 60px;
+  }
 }
 @media screen and (min-width: 768px) {
   .footer {

@@ -348,7 +348,7 @@ body {
 
 /* header */
 .header {
-  width: 480px;
+  max-width: 480px;
   border-bottom: 1px solid var(--header-border-bottom);
   background: var(--text-color);
 }
@@ -366,6 +366,16 @@ body {
     display: block;
   }
 }
+
+@media screen and (min-width: 1600px) {
+  .header__container {
+    max-width: 1200px;
+    padding-top: 32px;
+    padding-bottom: 32px;
+    display: block;
+  }
+}
+
 /* Logo header */
 .header-navigation__web {
   color: var(--accent-color);
@@ -822,20 +832,26 @@ body {
 
 /* Постійні клієнти */
 .regular-customers {
-  width: 480px;
   padding-bottom: 60px;
   padding-top: 60px;
 }
+@media screen and (min-width: 480px) {
+  .regular-customers {
+    width: 480px;
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
 @media screen and (min-width: 768px) {
   .regular-customers {
-    max-width: 767px;
-    padding-bottom: 60px;
-    padding-top: 60px;
+    width: 767px;
+    display: flex;
+    flex-wrap: wrap;
   }
 }
 @media screen and (min-width: 1600px) {
   .regular-customers {
-    max-width: 1200px;
+    width: 1200px;
     padding-bottom: 94px;
     padding-top: 94px;
     display: flex;
@@ -854,10 +870,25 @@ body {
   padding-top: 94px;
   padding-bottom: 50px;
 }
+@media screen and (min-width: 768px) {
+  .customers-title {
+    padding-top: 94px;
+    padding-bottom: 50px;
+    text-align: center;
+  }
+}
+@media screen and (min-width: 1600px) {
+  .customers-title {
+    width: 1200px;
+    text-align: center;
+    padding-top: 94px;
+    padding-bottom: 50px;
+  }
+}
 
 @media screen and (min-width: 1600px) {
   .container-customers {
-    max-width: 1200px;
+    width: 1200px;
     padding-bottom: 94px;
     padding-top: 94px;
     display: flex;
@@ -883,12 +914,18 @@ body {
 }
 
 .customers-items {
+  width: 210px;
   height: 92px;
+}
+@media screen and (min-width: 768px) {
+  .customers-items {
+    width: 50%;
+  }
 }
 
 @media screen and (min-width: 1600px) {
   .customers-list {
-    max-width: 1200px;
+    width: 1200px;
     display: flex;
     justify-content: center;
     align-items: center;

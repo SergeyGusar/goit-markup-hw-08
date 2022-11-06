@@ -2,25 +2,26 @@
 /* Постійні клієнти */
 
 .regular-customers {
-  width: 480px;
+ 
   padding-bottom: 60px;
   padding-top: 60px;
-
-
-  @media screen and ( min-width: 479px) {
-
-    // display: flex;
+  @media screen and ( min-width: 480px) {
+    width: 480px;
+    display: flex;
+    flex-wrap: wrap;
     }
+
+ 
   
 
   @media screen and ( min-width: 768px) {
-    max-width: 767px;
-    padding-bottom: 60px;
-  padding-top: 60px;
+    width: 767px;
+    display: flex;
+    flex-wrap: wrap;
   }
 
   @media  screen and ( min-width: 1600px) {
-    max-width: 1200px;
+    width: 1200px;
     padding-bottom: 94px;
   padding-top: 94px;
   display: flex;
@@ -38,11 +39,27 @@
     color: var(--secondary-color);
     padding-top: 94px;
     padding-bottom: 50px;
+
+    @media screen and ( min-width: 768px) {
+      padding-top: 94px;
+      padding-bottom: 50px;
+      text-align: center;
+    }
+
+    @media  screen and ( min-width: 1600px) {
+      width: 1200px;
+      text-align: center;
+      padding-top: 94px;
+      padding-bottom: 50px;
+    
+    }
+
+
   }
   .container-customers {
    
       @media  screen and ( min-width: 1600px) {
-        max-width: 1200px;
+        width: 1200px;
         padding-bottom: 94px;
       padding-top: 94px;
       display: flex;
@@ -74,8 +91,18 @@
   }
 }
   .customers-items {
-    // width: 210px;
+    width: 210px;
     height: 92px;
+    @media screen and ( min-width: 480px) {
+    //  flex-basis: 100% / 2;
+    
+   
+      }
+
+      @media screen and ( min-width: 768px) {
+      
+        width: 50%;
+      }
     
   }
   
@@ -84,7 +111,7 @@
     
      
     @media  screen and ( min-width: 1600px) {
-    max-width: 1200px;
+    width: 1200px;
     display: flex;
     justify-content: center;
     align-items: center;

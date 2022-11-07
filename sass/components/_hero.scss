@@ -6,8 +6,12 @@
     padding-left: 15px;
     padding-right: 15px;
     padding: 118px 60px;
+    text-align: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
    
-    background: var(--hero-background);
+    
   
     background-image: linear-gradient(
         var(--hero-background),
@@ -27,13 +31,12 @@
    
         }
       
-        @media  screen and ( min-width: 1600px) {
-          width: 1600px;
+        @media  screen and ( min-width: 1200px) {
           background-image: linear-gradient(
             var(--hero-background),
             var(--hero-background)
           ),
-          url(../img/studioimg/heroimg.jpg);
+          url(../img/studioimg/hero/descktop.jpg);
           
 
           padding-top: 200px;

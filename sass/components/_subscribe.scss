@@ -70,6 +70,16 @@
     border: 1px solid var(--accent-color);
     }
 
+    @media  screen and ( min-width: 768px) {
+      display: flex;
+    margin-right: 12px;
+    margin-left: 0;
+    margin-bottom: 0;
+    width: 450px;
+   
+  }
+    
+
     @media  screen and ( min-width: 1200px) {
       display: flex;
     margin-right: 12px;
@@ -78,6 +88,7 @@
     width: 358px;
    }
   }
+  
   
   .mailing-btn {
     width: 200px;

@@ -12,13 +12,18 @@
   padding-top: 60px;
   }
 
-  @media  screen and ( min-width: 1600px) {
+  @media  screen and ( min-width: 1200px) {
     padding-bottom: 94px;
   padding-top: 94px;
   }
   }
   .mailing-wrap {
-    // display: flex;
+
+    @media  screen and ( min-width: 1200px) {
+       display: flex;
+    align-items: baseline;
+    }
+   
     align-items: baseline;
   }
   
@@ -63,6 +68,14 @@
     &:focus {
     border: 1px solid var(--accent-color);
     }
+
+    @media  screen and ( min-width: 1200px) {
+      display: flex;
+    margin-right: 12px;
+    margin-left: 0;
+    margin-bottom: 0;
+    width: 358px;
+   }
   }
   
   .mailing-btn {

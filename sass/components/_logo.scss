@@ -15,14 +15,18 @@
     padding-top: 16px;
     padding-bottom: 16px;
     margin-left: 15px;
-    // padding-top: 25px;
-    // padding-bottom: 25px;
-    // margin-left: 93px;
+   
 
   
     &:focus {
     color: var(--accent-color);
     }
+
+    @media  screen and ( min-width: 1200px) {
+      padding-top: 25px;
+    padding-bottom: 25px;
+    margin-left: 93px;
+     }
   }  
 //   Logo-Footer
   

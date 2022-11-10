@@ -23,6 +23,9 @@
     }
 
     @media  screen and ( min-width: 1200px) {
+      font-size: 26px;
+    font-weight: 700;
+    line-height: 1.19;
       padding-top: 25px;
     padding-bottom: 25px;
     margin-left: 93px;
@@ -41,6 +44,10 @@
     display: block;
     margin-bottom: 20px;
     text-align: center;
+    @media  screen and ( min-width: 1200px) {
+      text-align: start;
+      margin-left: 115px;
+    }
   }
   .container-footer___web {
     color: var(--accent-color);

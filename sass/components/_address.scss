@@ -9,13 +9,16 @@
   }
   .address-title {
     text-align: center;
+    @media  screen and ( min-width: 1200px) {
+    
+    }
   }
-  .address-list {
+  .address-list  .mail-list {
     margin-bottom: 9px;
   }
-  .mail-list {
-    margin-bottom: 9px;
-  }
+  // .mail-list {
+  //   margin-bottom: 9px;
+  // }
   
   .address-list .address-item {
     font-size: 14px;
@@ -31,6 +34,8 @@
     &:hover {
       color: var(--accent-color);
     }
+
+   
 }
   
   .address-title .mail-item,
@@ -49,16 +54,26 @@
     &:hover {
       color: var(--accent-color);
     }
+
+    @media  screen and ( min-width: 1200px) {
+      margin-left: 115px;
+    }
   }
   
   .address-item {
     display: inline-block;
+    @media  screen and ( min-width: 1200px) {
+      margin-left: 115px;
+    }
   }
   /* Приєднуйтесь */
   
   .container-social {
-    // margin-left: 70px;
     margin-top: 60px;
+
+    @media  screen and ( min-width: 1200px) {
+      margin-left: 70px;
+    }
   }
   
   .content-title {

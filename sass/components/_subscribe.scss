@@ -2,9 +2,8 @@
 /* Підпишіться на розсилку */
 
 .mailing-list {
-    // margin-left: 93px;
-  //   padding-bottom: 60px;
-  // padding-top: 60px;
+   
+  
   margin-top: 60px;
 
   @media screen and ( min-width: 768px) {
@@ -22,6 +21,8 @@
     @media  screen and ( min-width: 1200px) {
        display: flex;
     align-items: baseline;
+   
+    margin-left: 93px;
     }
    
     align-items: baseline;

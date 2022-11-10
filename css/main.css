@@ -332,23 +332,23 @@ body {
 }
 @media screen and (min-width: 480px) {
   .container {
-    width: 480px;
+    max-width: 480px;
   }
 }
 @media screen and (min-width: 768px) {
   .container {
-    width: 768px;
+    max-width: 768px;
   }
 }
 @media screen and (min-width: 1200px) {
   .container {
-    width: 1200px;
+    max-width: 1200px;
   }
 }
 
 /* header */
 .header {
-  max-width: 480px;
+  width: 480px;
   border-bottom: 1px solid var(--header-border-bottom);
   background: var(--text-color);
 }
@@ -358,7 +358,7 @@ body {
     max-height: 80px;
   }
 }
-@media screen and (min-width: 1600px) {
+@media screen and (min-width: 1200px) {
   .header {
     padding-top: 32px;
     padding-bottom: 32px;
@@ -366,7 +366,7 @@ body {
   }
 }
 
-@media screen and (min-width: 1600px) {
+@media screen and (min-width: 1200px) {
   .header__container {
     padding-top: 32px;
     padding-bottom: 32px;
@@ -396,6 +396,9 @@ body {
 }
 @media screen and (min-width: 1200px) {
   .header-navigation__logo {
+    font-size: 26px;
+    font-weight: 700;
+    line-height: 1.19;
     padding-top: 25px;
     padding-bottom: 25px;
     margin-left: 93px;
@@ -413,6 +416,12 @@ body {
   display: block;
   margin-bottom: 20px;
   text-align: center;
+}
+@media screen and (min-width: 1200px) {
+  .footer-container__logo {
+    text-align: start;
+    margin-left: 115px;
+  }
 }
 
 .container-footer___web {
@@ -858,9 +867,6 @@ body {
   }
 }
 
-.team-img {
-  display: block;
-}
 @media screen and (min-width: 480px) {
   .team-img {
     width: 450px;
@@ -1131,12 +1137,7 @@ body {
 .address-title {
   text-align: center;
 }
-
-.address-list {
-  margin-bottom: 9px;
-}
-
-.mail-list {
+.address-list .mail-list {
   margin-bottom: 9px;
 }
 
@@ -1172,14 +1173,31 @@ body {
 .address-link:hover {
   color: var(--accent-color);
 }
+@media screen and (min-width: 1200px) {
+  .address-title .mail-item,
+.address-title .tel-item,
+.address-link {
+    margin-left: 115px;
+  }
+}
 
 .address-item {
   display: inline-block;
+}
+@media screen and (min-width: 1200px) {
+  .address-item {
+    margin-left: 115px;
+  }
 }
 
 /* Приєднуйтесь */
 .container-social {
   margin-top: 60px;
+}
+@media screen and (min-width: 1200px) {
+  .container-social {
+    margin-left: 70px;
+  }
 }
 
 .content-title {
@@ -1238,6 +1256,7 @@ body {
   .mailing-wrap {
     display: flex;
     align-items: baseline;
+    margin-left: 93px;
   }
 }
 

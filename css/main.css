@@ -360,7 +360,6 @@ body {
 }
 @media screen and (min-width: 1200px) {
   .header {
-    padding-top: 32px;
     padding-bottom: 32px;
     display: block;
   }
@@ -416,6 +415,11 @@ body {
   display: block;
   margin-bottom: 20px;
   text-align: center;
+}
+@media screen and (min-width: 768px) {
+  .footer-container__logo {
+    text-align: inherit;
+  }
 }
 @media screen and (min-width: 1200px) {
   .footer-container__logo {
@@ -1105,6 +1109,12 @@ body {
   }
 }
 
+@media screen and (min-width: 768px) {
+  .container-footer {
+    margin-left: 115px;
+  }
+}
+
 .footer {
   padding-bottom: 60px;
   padding-top: 60px;
@@ -1134,9 +1144,17 @@ body {
   font-style: normal;
 }
 
-.address-title {
-  text-align: center;
+@media screen and (min-width: 480px) {
+  .address-title {
+    text-align: center;
+  }
 }
+@media screen and (min-width: 768px) {
+  .address-title {
+    text-align: inherit;
+  }
+}
+
 .address-list .mail-list {
   margin-bottom: 9px;
 }

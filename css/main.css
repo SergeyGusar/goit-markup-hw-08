@@ -26,43 +26,6 @@
   --portfolio-text-border: #eeeeee;
 }
 
-h1,
-h2,
-h3,
-ul,
-p {
-  margin: 0;
-  padding: 0;
-}
-
-button {
-  font-family: inherit;
-  padding: 0;
-  margin: 0;
-  border: none;
-}
-
-img {
-  display: block;
-  max-width: 100%;
-  height: auto;
-}
-
-li {
-  list-style-type: none;
-}
-
-.visually-hidden {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  margin: -1px;
-  padding: 0;
-  overflow: hidden;
-  border: 0;
-  clip: rect(0 0 0 0);
-}
-
 /*! modern-normalize v1.1.0 | MIT License | https://github.com/sindresorhus/modern-normalize */
 /*
 Document
@@ -316,19 +279,16 @@ body {
 }
 
 .container-portfolio {
-  max-width: 1200px;
+  width: 1200px;
   margin: 0 auto;
   padding-right: 15px;
   padding-left: 15px;
 }
 
 .container {
-  width: 100%;
+  padding: 0 15px;
   margin-left: auto;
   margin-right: auto;
-  padding-left: 15px;
-  padding-right: 15px;
-  /* margin: 0 auto; */
 }
 @media screen and (min-width: 480px) {
   .container {
@@ -346,11 +306,70 @@ body {
   }
 }
 
+h1,
+h2,
+h3,
+ul,
+p {
+  margin: 0;
+  padding: 0;
+}
+
+button {
+  font-family: inherit;
+  padding: 0;
+  margin: 0;
+  border: none;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  width: 100%;
+}
+
+li {
+  list-style-type: none;
+}
+
+h1,
+h2,
+h3,
+ul,
+p {
+  margin: 0;
+  padding: 0;
+}
+
+button {
+  font-family: inherit;
+  padding: 0;
+  margin: 0;
+  border: none;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  width: 100%;
+}
+
+li {
+  list-style-type: none;
+}
+
 /* header */
 .header {
-  width: 480px;
   border-bottom: 1px solid var(--header-border-bottom);
   background: var(--text-color);
+}
+@media screen and (min-width: 480px) {
+  .header {
+    max-width: 480px;
+    display: flex;
+  }
 }
 @media screen and (min-width: 768px) {
   .header {
@@ -371,6 +390,11 @@ body {
     padding-bottom: 32px;
     display: block;
   }
+}
+
+.menu-open-btn {
+  margin-left: auto;
+  background-color: #ffffff;
 }
 
 /* Logo header */

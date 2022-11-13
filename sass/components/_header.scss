@@ -37,7 +37,10 @@ background: var(--text-color);
     margin-left: auto;
     background-color: #ffffff;
     
+    @media screen and ( min-width: 767px) {
+     
+      display: none;
+    }
+    
    }
     
-  
-

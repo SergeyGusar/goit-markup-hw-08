@@ -25,9 +25,17 @@
     margin-left: 93px;
     }
    
-    align-items: baseline;
+   
   }
   
+  .mailing-label {
+  @include tablet {
+    display: flex;
+    justify-content: center;
+  }  
+  
+    
+  }
   .mailing-list input::placeholder {
     display: flex;
     align-items: center;

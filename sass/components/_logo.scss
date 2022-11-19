@@ -12,14 +12,18 @@
     letter-spacing: 0.03em;
     color: var(--logo-color);
     text-decoration: none;
-    padding-top: 16px;
-    padding-bottom: 16px;
-    margin-left: 15px;
+    
    
 
   
     &:focus {
     color: var(--accent-color);
+    }
+    @include mobile {
+      margin-left: 15px;
+      padding-top: 16px;
+      padding-bottom: 16px;
+      
     }
 
     @media  screen and ( min-width: 1200px) {
@@ -28,7 +32,7 @@
     line-height: 1.19;
       padding-top: 25px;
     padding-bottom: 25px;
-    margin-left: 93px;
+    margin-right: 93px;
      }
   }  
 //   Logo-Footer
@@ -54,8 +58,8 @@
       }
 
     @media  screen and ( min-width: 1200px) {
-      text-align: start;
-      margin-left: 115px;
+    
+      
     }
   }
   .container-footer___web {

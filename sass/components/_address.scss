@@ -8,16 +8,20 @@
 
   }
   .address-title {
-    
-    @media  screen and ( min-width: 480px) {
     text-align: center;
-    }
+   
     
     @media  screen and ( min-width: 768px) {
       
       
       }
+
+     @media screen and ( min-width: 1200px) {
+      margin-right: 70px;
+      text-align: start;
+     } 
   }
+
   .address-list  .mail-list {
     margin-bottom: 9px;
   }
@@ -102,6 +106,10 @@
     color: var(--text-color);
     margin-bottom: 20px;
     text-align: center;
+
+    @media  screen and ( min-width: 1200px) {
+      text-align: start;
+    }
   }
   .footer-social {
     display: flex;

@@ -14,7 +14,7 @@
     }
     
     @media  screen and ( min-width: 768px) {
-      text-align: inherit;
+      
       
       }
   }
@@ -26,6 +26,7 @@
   // }
   
   .address-list .address-item {
+    display: block;
     font-size: 14px;
     line-height: 1.71;
     letter-spacing: 0.03em;
@@ -86,7 +87,9 @@
   }
   .footer-tablet-container{
     @media  screen and ( min-width: 768px) {
-      
+      display: flex;
+    justify-content: space-around;
+    align-items: baseline;
     }
   }
   

@@ -15,8 +15,13 @@
 
   }
   .container-footer{
+    @media screen and ( min-width: 480px) {
+    
+      
+    }
+
     @media screen and ( min-width: 768px) {
-      margin-left: 115px;
+      max-width: 768px;
       
     }
   }

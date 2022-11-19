@@ -4,7 +4,9 @@
     color: var(--primary-color);
     font-family: "Roboto", sans-serif;
   }
- 
+  .no-scroll {
+    overflow: hidden;
+  }
 
 // portfolio
 

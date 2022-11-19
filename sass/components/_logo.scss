@@ -43,14 +43,13 @@
     text-decoration: none;
     display: block;
     margin-bottom: 20px;
-
-    @include mobile {
-      text-align: center;
-    }
+    text-align: center;
     
 
     @media  screen and ( min-width: 768px) {
-      text-align: inherit;
+      display: flex;
+    justify-content: center;
+    align-items: center;
       
       }
 

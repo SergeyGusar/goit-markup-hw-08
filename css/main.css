@@ -284,6 +284,10 @@ body {
   font-family: "Roboto", sans-serif;
 }
 
+.no-scroll {
+  overflow: hidden;
+}
+
 body {
   background: var(--text-color);
   color: var(--secondary-color);
@@ -342,10 +346,6 @@ img {
 
 li {
   list-style-type: none;
-}
-
-.no-scroll {
-  overflow: hidden;
 }
 
 /* header */
@@ -415,15 +415,13 @@ li {
   text-decoration: none;
   display: block;
   margin-bottom: 20px;
-}
-@media screen and (min-width: 480px) {
-  .footer-container__logo {
-    text-align: center;
-  }
+  text-align: center;
 }
 @media screen and (min-width: 768px) {
   .footer-container__logo {
-    text-align: inherit;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -950,20 +948,13 @@ li {
 
 /* Постійні клієнти */
 .customers {
+  padding-bottom: 60px;
+  padding-top: 60px;
   margin: 0 auto;
-}
-@media screen and (min-width: 480px) {
-  .customers {
-    width: 480px;
-    display: flex;
-    flex-wrap: wrap;
-    padding-bottom: 60px;
-    padding-top: 60px;
-  }
+  flex-wrap: wrap;
 }
 @media screen and (min-width: 768px) {
   .customers {
-    width: 767px;
     display: flex;
     flex-wrap: wrap;
     padding-bottom: 60px;
@@ -974,50 +965,28 @@ li {
   .customers {
     padding-bottom: 94px;
     padding-top: 50px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
   }
 }
 
 .customers__title {
   font-weight: 700;
-  font-size: 36px;
-  line-height: 1.16px;
+  font-size: 28px;
+  line-height: 1.17;
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--secondary-color);
-  padding-bottom: 50px;
-}
-@media screen and (min-width: 480px) {
-  .customers__title {
-    width: 314px;
-    margin: 60px 83px 30px 83px;
-    text-align: center;
-    line-height: 1.17px;
-  }
-}
-@media screen and (min-width: 768px) {
-  .customers__title {
-    width: 314px;
-    margin: 60px 227px 30px 227px;
-    padding-bottom: 50px;
-    line-height: 1.17px;
-    text-align: center;
-    margin-left: auto;
-  }
+  margin-bottom: 30px;
 }
 @media screen and (min-width: 1200px) {
   .customers__title {
-    line-height: 1.16px;
-    text-align: center;
-    padding-top: 94px;
-    padding-bottom: 50px;
+    margin-bottom: 50px;
+    font-size: 36px;
+    line-height: 1.16;
   }
 }
 
 @media screen and (min-width: 1200px) {
-  .customers__container {
+  .container {
     padding-bottom: 94px;
   }
 }
@@ -1026,7 +995,7 @@ li {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 210px;
+  height: 92px;
   border: 1px solid;
   border-radius: 4px;
   color: var(--border-color-clients-icon);
@@ -1048,11 +1017,12 @@ li {
   color: var(--accent-color);
 }
 
-@media screen and (min-width: 480px) {
-  .customers__list {
-    display: flex;
-    flex-wrap: wrap;
-  }
+.customers__list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 30px;
 }
 @media screen and (min-width: 768px) {
   .customers__list {
@@ -1063,10 +1033,7 @@ li {
 @media screen and (min-width: 1200px) {
   .customers__list {
     flex-wrap: nowrap;
-    display: flex;
-    justify-content: center;
     align-items: center;
-    gap: 30px;
   }
 }
 
@@ -1081,16 +1048,12 @@ li {
 }
 @media screen and (min-width: 768px) {
   .customers__items {
-    max-width: 737px;
     flex-basis: calc((100% - 30px) / 3);
   }
 }
 @media screen and (min-width: 1200px) {
   .customers__items {
     width: calc((100% - 150px) / 6);
-    flex-wrap: nowrap;
-    justify-content: center;
-    align-items: center;
   }
 }
 
@@ -1115,7 +1078,7 @@ li {
 
 @media screen and (min-width: 768px) {
   .container-footer {
-    margin-left: 115px;
+    max-width: 768px;
   }
 }
 
@@ -1153,17 +1116,12 @@ li {
     text-align: center;
   }
 }
-@media screen and (min-width: 768px) {
-  .address-title {
-    text-align: inherit;
-  }
-}
-
 .address-list .mail-list {
   margin-bottom: 9px;
 }
 
 .address-list .address-item {
+  display: block;
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
@@ -1219,6 +1177,14 @@ li {
 @media screen and (min-width: 1200px) {
   .container-social {
     margin-left: 70px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .footer-tablet-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: baseline;
   }
 }
 

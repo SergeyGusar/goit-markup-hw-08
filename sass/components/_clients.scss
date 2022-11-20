@@ -49,18 +49,7 @@
     }
 
   }
-  .container {
-
-
-   
-   
-   
-      @media  screen and ( min-width: 1200px) {      
-     
-      padding-bottom: 94px;
-      }
-   
-  }
+  
   
   .customers__logo-link {
     display: flex;
@@ -114,26 +103,11 @@
  
 }
   .customers__items {
-    
-    height: 92px;
-    padding-left: 15px;
-    
-    @media screen and ( max-width: 480px) {
+   
+    @media screen and ( max-width: 767px) {
       flex-basis: calc((100% - 30px)/2);
       
       }
-
-      @media screen and ( min-width: 768px) {
-        
-        flex-basis: calc((100% - 30px)/3);
-       
-      }
-
-      @media screen and ( min-width: 1200px) {
-        width: calc((100% - 150px) / 6);
-        
-        }
-    
   }
   
   

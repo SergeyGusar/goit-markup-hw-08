@@ -381,7 +381,6 @@ ul {
     display: flex;
     padding-top: 32px;
     padding-bottom: 32px;
-    margin-left: 215px;
   }
 }
 
@@ -416,7 +415,7 @@ ul {
     line-height: 1.19;
     padding-top: 25px;
     padding-bottom: 25px;
-    margin-right: 93px;
+    margin-left: 215px;
   }
 }
 
@@ -620,7 +619,7 @@ ul {
 }
 @media screen and (min-width: 1200px) {
   .hero {
-    background-image: linear-gradient(var(--hero-background), var(--hero-background)), url(../img/studioimg/hero/descktop.jpg);
+    background-image: linear-gradient(var(--hero-background), var(--hero-background)), url(../img/studioimg/hero/desktop.jpg);
     padding-top: 200px;
     padding-bottom: 200px;
   }

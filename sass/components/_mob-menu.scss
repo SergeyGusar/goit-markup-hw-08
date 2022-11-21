@@ -14,8 +14,8 @@
     position: fixed;
     top: 0;
     background:var(--text-color) ;
-    width: 100vw;
-    height: 100vh;
+    width: 100%;
+    height: 100%;
     z-index: 1;
     
   
@@ -34,7 +34,7 @@
     margin-left: auto;
     padding: 10px 15px;
     background:var(--text-color);
-
+    cursor: pointer;
 
     @include tablet {
      
@@ -50,7 +50,7 @@
       display: block;
       margin-left: auto;
       padding-top: 10px;
-      
+      cursor: pointer;
       background:var(--text-color);
 
       @include tablet {

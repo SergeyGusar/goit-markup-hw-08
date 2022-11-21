@@ -14,7 +14,7 @@
       display: flex;
     align-items: center;
     padding: 32px 0;
-      margin-left: 87px;
+      margin-left: 88px;
       }
     
    
@@ -52,10 +52,9 @@
 }
 
     .header-navigation__link-current {
-    &:hover,
-    &:focus {
+    
     color: var(--accent-color);
-   } 
+  
   
 
 
@@ -86,7 +85,9 @@
     &:focus {
     color: var(--accent-color);
   }
-  
+}
+  .header-navigation__link-active-current {
+    color: var(--accent-color);
     &::after{
     display: block;  
     content: "";

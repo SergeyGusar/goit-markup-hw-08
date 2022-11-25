@@ -284,10 +284,6 @@ body {
   font-family: "Roboto", sans-serif;
 }
 
-.no-scroll {
-  overflow: hidden;
-}
-
 body {
   background: var(--text-color);
   color: var(--secondary-color);
@@ -350,6 +346,10 @@ li {
 ul {
   margin-left: 0;
   margin-right: 0;
+}
+
+.no-scroll {
+  overflow: hidden;
 }
 
 /* header */

@@ -55,31 +55,12 @@
     margin-left: auto;
     margin-right: auto;
 
-    @media screen and ( min-width: 768px) {
-      font-weight: 900;
-      font-size: 26px;
-    line-height: 1.61;
-    letter-spacing: 0.06em;
-    color: var(--text-color);
-  
-    margin-bottom: 30px;
-    text-transform: uppercase;
-    width: 360px;
-    text-align: center;
-    margin-left: auto;
-    margin-right: auto;
-     
-      }
+   
     
       @media  screen and ( min-width: 1200px) {
-        font-weight: 900;
        font-size: 44px;
-    line-height: 1.36;
-    margin-bottom: 30px;
-    text-transform: uppercase;
-    text-align: center;
-    width: 696px;
-    margin-left: auto;
-    margin-right: auto;
+       line-height: 1.36;
+       margin-bottom: 30px;
+       width: 696px;
       }
   }

@@ -372,8 +372,6 @@ ul {
 @media screen and (min-width: 768px) {
   .header__container {
     display: flex;
-    padding-top: 32px;
-    padding-bottom: 32px;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -455,7 +453,6 @@ ul {
   .header-navigation__list {
     display: flex;
     align-items: center;
-    padding: 32px 0;
     margin-left: 88px;
   }
 }
@@ -548,8 +545,11 @@ ul {
 @media screen and (min-width: 768px) {
   .contacts {
     display: flex;
+    justify-content: center;
     flex-direction: column;
     margin-left: 97px;
+    padding-top: 21px;
+    padding-bottom: 21px;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -642,32 +642,12 @@ ul {
   margin-left: auto;
   margin-right: auto;
 }
-@media screen and (min-width: 768px) {
-  .hero__title {
-    font-weight: 900;
-    font-size: 26px;
-    line-height: 1.61;
-    letter-spacing: 0.06em;
-    color: var(--text-color);
-    margin-bottom: 30px;
-    text-transform: uppercase;
-    width: 360px;
-    text-align: center;
-    margin-left: auto;
-    margin-right: auto;
-  }
-}
 @media screen and (min-width: 1200px) {
   .hero__title {
-    font-weight: 900;
     font-size: 44px;
     line-height: 1.36;
     margin-bottom: 30px;
-    text-transform: uppercase;
-    text-align: center;
     width: 696px;
-    margin-left: auto;
-    margin-right: auto;
   }
 }
 
@@ -675,12 +655,6 @@ ul {
 .skills {
   padding-bottom: 60px;
   padding-top: 60px;
-}
-@media screen and (min-width: 768px) {
-  .skills {
-    padding-bottom: 60px;
-    padding-top: 60px;
-  }
 }
 @media screen and (min-width: 1200px) {
   .skills {
@@ -1065,10 +1039,9 @@ ul {
 }
 @media screen and (min-width: 1200px) {
   .footer-container {
-    margin: 0 auto;
     display: flex;
     align-items: baseline;
-    justify-content: center;
+    justify-content: space-evenly;
   }
 }
 
@@ -1082,22 +1055,6 @@ ul {
   padding-bottom: 60px;
   padding-top: 60px;
   background: var(--footer-color);
-}
-@media screen and (min-width: 768px) {
-  .footer {
-    padding-bottom: 60px;
-    padding-top: 60px;
-  }
-}
-@media screen and (min-width: 1200px) {
-  .footer {
-    padding-top: 60px;
-    padding-bottom: 60px;
-    margin-left: auto;
-    margin-right: auto;
-    padding-left: 15px;
-    padding-right: 15px;
-  }
 }
 
 /* address */
@@ -1711,6 +1668,10 @@ ul {
   padding: 10px 15px;
   background: var(--text-color);
   cursor: pointer;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.menu-open-btn:hover, .menu-open-btn:focus {
+  fill: var(--accent-color);
 }
 @media screen and (min-width: 768px) {
   .menu-open-btn {
@@ -1729,6 +1690,10 @@ ul {
   padding-top: 10px;
   cursor: pointer;
   background: var(--text-color);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.menu-close-btn:hover, .menu-close-btn:focus {
+  fill: var(--accent-color);
 }
 @media screen and (min-width: 768px) {
   .menu-close-btn {

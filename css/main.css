@@ -12,7 +12,6 @@
   --header-border-bottom: #ececec;
   --border-color-clients-icon: #afb1b8;
   --hover-focus-color: #188ce8;
-  --hero-background: #2f303a;
   --transition-property: cubic-bezier(0.4, 0, 0.2, 1);
   --color-address-footer: rgba(255, 255, 255, 0.6);
   --background-color-icon-footer: rgba(255, 255, 255, 0.1);
@@ -297,7 +296,8 @@ body {
 }
 
 .container {
-  padding: 0 15px;
+  padding-left: 15px;
+  padding-right: 15px;
   margin-left: auto;
   margin-right: auto;
 }
@@ -377,6 +377,7 @@ ul {
 @media screen and (min-width: 1200px) {
   .header__container {
     display: flex;
+    align-items: center;
     padding-top: 32px;
     padding-bottom: 32px;
   }

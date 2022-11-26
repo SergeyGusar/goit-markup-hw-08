@@ -646,7 +646,6 @@ ul {
   .hero__title {
     font-size: 44px;
     line-height: 1.36;
-    margin-bottom: 30px;
     width: 696px;
   }
 }
@@ -1035,7 +1034,7 @@ ul {
   .footer-container {
     display: flex;
     align-items: baseline;
-    justify-content: space-evenly;
+    justify-content: center;
   }
 }
 

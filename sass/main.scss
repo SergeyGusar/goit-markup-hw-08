@@ -1,12 +1,14 @@
 // Base
-@import './utils/variables';
-@import './utils/hidden';
+@import './base/container';
 @import './base/normalize';
 @import './base/mixins';
 @import './base/fonts';
 @import './base/common';
-@import './base/container';
 @import './base/reset';
+
+// Utils
+@import './utils/variables';
+@import './utils/hidden';
 
 
 // Section

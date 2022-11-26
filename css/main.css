@@ -1488,7 +1488,7 @@ ul {
   display: contents;
   color: var(--primary-color);
 }
-@media screen and (min-width: 1600px) {
+@media screen and (min-width: 1200px) {
   .accept label {
     display: contents;
     font-weight: 400;

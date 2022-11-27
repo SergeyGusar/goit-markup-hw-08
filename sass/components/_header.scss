@@ -1,35 +1,26 @@
- /* header */
- .header {
-display: flex;
-border-bottom: 1px solid var(--header-border-bottom);
-background: var(--text-color);
-
-
+/* header */
+.header {
+  display: flex;
+  border-bottom: 1px solid var(--header-border-bottom);
+  background: var(--text-color);
 
   @include tablet {
-    
     height: 80px;
-    }
-  
-    @include desktop {
-     
-      height: 80px;
-    }
-  
   }
-  .header__container {
 
-
-    @media screen and ( min-width:768px) { 
+  @include desktop {
+    height: 80px;
+  }
+}
+.header__container {
+  @media screen and (min-width: 768px) {
     display: flex;
-   
-     }
+  }
 
-     @media  screen and ( min-width:1200px) {
-      display: flex;
-      align-items: center;
+  @media screen and (min-width: 1200px) {
+    display: flex;
+    align-items: center;
     padding-top: 32px;
     padding-bottom: 32px;
-   
-     }
-  } 
+  }
+}

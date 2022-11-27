@@ -18,15 +18,7 @@
     background: var(--text-color);
   }
   
-  // .container-team {
-  //   margin-left: auto;
-  //   margin-right: auto;
-  //   padding-left: 15px;
-  //   padding-right: 15px;
-  //   // display: flex;
 
- 
-  // }
   .team-title {
     margin-bottom: 50px;
   }
@@ -38,15 +30,12 @@
    
     
     @media screen and ( min-width: 768px) {
-      display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
+    
     gap: 30px;
     }
     @media screen and ( min-width: 1200px) {
     
-    display: flex;
-    justify-content: center;
+  
     flex-wrap: nowrap;
     gap: 30px;
     padding-inline-start: 0px;

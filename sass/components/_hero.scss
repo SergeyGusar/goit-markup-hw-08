@@ -1,65 +1,56 @@
 /* section hero */
 .hero {
-   
-   
-    padding: 118px 60px;
-    text-align: center;
+  padding: 118px 60px;
+  text-align: center;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-   
-    
-  
+
+  background-image: linear-gradient(
+      var(--hero-background),
+      var(--hero-background)
+    ),
+    url(../img/studioimg/hero/mobile.jpg);
+
+  @media screen and (min-width: 768px) {
     background-image: linear-gradient(
-        var(--hero-background),
-        var(--hero-background)
-      ),
-      url(../img/studioimg/hero/mobile.jpg);
-
-
-      @media screen and ( min-width: 768px) {
-        background-image: linear-gradient(
         var(--hero-background),
         var(--hero-background)
       ),
       url(../img/studioimg/hero/tablet.jpg);
 
-      padding: 118px 204px;
-   
-        }
-      
-        @media  screen and ( min-width: 1200px) {
-          background-image: linear-gradient(
-            var(--hero-background),
-            var(--hero-background)
-          ),
-          url(../img/studioimg/hero/desktop.jpg);
-          
-
-          padding-top: 200px;
-          padding-bottom: 280px;
-        }
+    padding: 118px 204px;
   }
-  
-  .hero__title {
-    font-weight: 900;
-    font-size: 26px;
-    line-height: 1.61;
-    letter-spacing: 0.06em;
-    color: var(--text-color);
-  
-    margin-bottom: 30px;
-    text-transform: uppercase;
-    text-align: center;
-    width: 360px;
-    margin-left: auto;
-    margin-right: auto;
 
-   
-    
-      @media  screen and ( min-width: 1200px) {
-       font-size: 44px;
-       line-height: 1.36;
-       width: 696px;
-      }
+  @media screen and (min-width: 1200px) {
+    background-image: linear-gradient(
+        var(--hero-background),
+        var(--hero-background)
+      ),
+      url(../img/studioimg/hero/desktop.jpg);
+
+    padding-top: 200px;
+    padding-bottom: 200px;
   }
+}
+
+.hero__title {
+  font-weight: 900;
+  font-size: 26px;
+  line-height: 1.61;
+  letter-spacing: 0.06em;
+  color: var(--text-color);
+
+  margin-bottom: 30px;
+  text-transform: uppercase;
+  text-align: center;
+  width: 360px;
+  margin-left: auto;
+  margin-right: auto;
+
+  @media screen and (min-width: 1200px) {
+    font-size: 44px;
+    line-height: 1.36;
+    width: 696px;
+  }
+}

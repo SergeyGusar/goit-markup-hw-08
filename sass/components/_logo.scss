@@ -1,67 +1,59 @@
 /* Logo header */
 
 .header-navigation__web {
+  color: var(--accent-color);
+}
+
+.header-navigation__logo {
+  font-family: "Raleway", sans-serif;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.2;
+  letter-spacing: 0.03em;
+  color: var(--logo-color);
+  text-decoration: none;
+
+  &:focus {
     color: var(--accent-color);
   }
-  
-  .header-navigation__logo {
-    font-family: "Raleway", sans-serif;
-    font-weight: 700;
+  @include mobile {
+    margin-left: 15px;
+    padding-top: 16px;
+    padding-bottom: 16px;
+  }
+
+  @media screen and (min-width: 1200px) {
     font-size: 26px;
-    line-height: 1.2;
-    letter-spacing: 0.03em;
-    color: var(--logo-color);
-    text-decoration: none;
-    
-   
-
-  
-    &:focus {
-    color: var(--accent-color);
-    }
-    @include mobile {
-      margin-left: 15px;
-      padding-top: 16px;
-      padding-bottom: 16px;
-      
-    }
-
-    @media  screen and ( min-width: 1200px) {
-      font-size: 26px;
     font-weight: 700;
     line-height: 1.19;
-      padding-top: 25px;
+    padding-top: 25px;
     padding-bottom: 25px;
     margin-left: 215px;
-     }
-  }  
+  }
+}
 //   Logo-Footer
-  
-  .footer-container__logo {
-    font-family: "Raleway", sans-serif;
-    font-weight: 700;
-    font-size: 26px;
-    line-height: 1.2;
-    letter-spacing: 0.03em;
-    color: var(--text-color);
-    text-decoration: none;
-    display: block;
-    margin-bottom: 20px;
-    text-align: center;
-    
 
-    @media  screen and ( min-width: 768px) {
-      display: flex;
+.footer-container__logo {
+  font-family: "Raleway", sans-serif;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.2;
+  letter-spacing: 0.03em;
+  color: var(--text-color);
+  text-decoration: none;
+  display: block;
+  margin-bottom: 20px;
+  text-align: center;
+
+  @media screen and (min-width: 768px) {
+    display: flex;
     justify-content: center;
     align-items: center;
-      
-      }
+  }
 
-    @media  screen and ( min-width: 1200px) {
-    
-      
-    }
+  @media screen and (min-width: 1200px) {
   }
-  .container-footer___web {
-    color: var(--accent-color);
-  }
+}
+.container-footer___web {
+  color: var(--accent-color);
+}

@@ -32,10 +32,13 @@
 
 .skills__item {
   display: block;
-  margin-bottom: 30px;
+  
   @media screen and (min-width: 768px) {
     flex-basis: calc((100% - 30px) / 2);
   }
+}
+.skills__item:last-child {
+  margin-bottom: 0;
 }
 .skills__icon {
   display: flex;

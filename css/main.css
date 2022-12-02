@@ -427,7 +427,7 @@ ul {
   color: var(--text-color);
   text-decoration: none;
   display: block;
-  margin-bottom: 20px;
+  margin-bottom: 28px;
   text-align: center;
 }
 @media screen and (min-width: 768px) {
@@ -688,12 +688,15 @@ ul {
 
 .skills__item {
   display: block;
-  margin-bottom: 30px;
 }
 @media screen and (min-width: 768px) {
   .skills__item {
     flex-basis: calc((100% - 30px) / 2);
   }
+}
+
+.skills__item:last-child {
+  margin-bottom: 0;
 }
 
 .skills__icon {
@@ -795,7 +798,7 @@ ul {
 
 /* Наша Команда */
 .section-team {
-  background: var(--text-color);
+  background: #F5F4FA;
 }
 @media screen and (min-width: 480px) {
   .section-team {
@@ -817,7 +820,12 @@ ul {
 }
 
 .team-title {
-  margin-bottom: 50px;
+  margin-bottom: 30px;
+}
+@media screen and (min-width: 1200px) {
+  .team-title {
+    margin-bottom: 50px;
+  }
 }
 
 .team-list {
@@ -850,6 +858,10 @@ ul {
   }
 }
 
+.team-item:last-child {
+  margin-bottom: 0;
+}
+
 @media screen and (min-width: 480px) {
   .team-img {
     width: 450px;
@@ -869,11 +881,17 @@ ul {
 
 .team-title {
   font-weight: 700;
-  font-size: 36px;
-  line-height: 1.16;
+  font-size: 28px;
+  line-height: 1.17;
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--secondary-color);
+}
+@media screen and (min-width: 1200px) {
+  .team-title {
+    font-size: 36px;
+    line-height: 1.16;
+  }
 }
 
 .teams-text {
@@ -1060,10 +1078,6 @@ ul {
   }
 }
 
-.address-list .mail-list {
-  margin-bottom: 9px;
-}
-
 .address-list .address-item {
   display: block;
   font-size: 14px;
@@ -1135,7 +1149,7 @@ ul {
 .content-title {
   font-weight: 700;
   font-size: 14px;
-  line-height: 1.14px;
+  line-height: 1.14;
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: var(--text-color);

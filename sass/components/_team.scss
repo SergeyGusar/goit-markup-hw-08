@@ -1,6 +1,8 @@
 /* Наша Команда */
 
 .section-team {
+  background: #F5F4FA;
+
   @media screen and ( min-width: 480px) {
     padding-bottom: 60px;
   padding-top: 60px;
@@ -15,12 +17,16 @@
     padding-bottom: 94px;
   padding-top: 94px;
   }
-    background: var(--text-color);
+  
   }
   
 
   .team-title {
-    margin-bottom: 50px;
+    margin-bottom: 30px;
+
+    @include desktop {
+      margin-bottom: 50px;
+    }
   }
   
   .team-list {
@@ -57,9 +63,11 @@
     @media screen and ( min-width: 1200px) {
       flex-basis: 270px;
     }
-
-
-   
+    
+    
+}
+.team-item:last-child {
+  margin-bottom: 0;
 }
   
   .team-img {
@@ -86,11 +94,16 @@
   
   .team-title {
     font-weight: 700;
-    font-size: 36px;
-    line-height: 1.16;
+    font-size: 28px;
+    line-height: 1.17;
     text-align: center;
     letter-spacing: 0.03em;
     color: var(--secondary-color);
+
+    @include desktop{
+      font-size: 36px;
+      line-height: 1.16;
+    }
     
   }
   

@@ -59,6 +59,9 @@
     // @media screen and ( min-width: 768px) {
     //   flex-basis: calc((100% - 30px)/2);
     // }
+    @include tablet {
+      margin-bottom: 0;
+    }
 
     @media screen and ( min-width: 1200px) {
       flex-basis: 270px;

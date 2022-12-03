@@ -21,7 +21,7 @@
   }
 }
 
-.header-navigation__item:not(:last-child) {
+.header-navigation__item:not( last-child ) {
   margin-right: 50px;
 }
 .header-navigation__link,

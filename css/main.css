@@ -284,16 +284,15 @@ body {
 h1,
 h2,
 h3,
-ul,
 p {
-  margin: 0;
-  padding: 0;
+  margin: 0px;
+  padding: 0px;
 }
 
 button {
   font-family: inherit;
-  padding: 0;
-  margin: 0;
+  padding: 0px;
+  margin: 0px;
   border: none;
 }
 
@@ -303,13 +302,18 @@ img {
   max-width: 100%;
 }
 
+div {
+  margin: 0px;
+}
+
 li {
   list-style-type: none;
 }
 
 ul {
-  margin-left: 0;
-  margin-right: 0;
+  list-style-type: none;
+  margin: 0px;
+  padding: 0px;
 }
 
 .no-scroll {
@@ -369,6 +373,11 @@ ul {
   }
 }
 
+.header__container {
+  display: flex;
+  align-items: center;
+  margin-left: 15px;
+}
 @media screen and (min-width: 768px) {
   .header__container {
     display: flex;
@@ -378,6 +387,7 @@ ul {
   .header__container {
     display: flex;
     align-items: center;
+    margin-left: 215px;
     padding-top: 32px;
     padding-bottom: 32px;
   }
@@ -389,6 +399,7 @@ ul {
 }
 
 .header-navigation__logo {
+  margin: auto;
   font-family: "Raleway", sans-serif;
   font-weight: 700;
   font-size: 26px;
@@ -400,13 +411,6 @@ ul {
 .header-navigation__logo:focus {
   color: var(--accent-color);
 }
-@media screen and (min-width: 480px) {
-  .header-navigation__logo {
-    margin-left: 15px;
-    padding-top: 16px;
-    padding-bottom: 16px;
-  }
-}
 @media screen and (min-width: 1200px) {
   .header-navigation__logo {
     font-size: 26px;
@@ -414,7 +418,6 @@ ul {
     line-height: 1.19;
     padding-top: 25px;
     padding-bottom: 25px;
-    margin-left: 215px;
   }
 }
 
@@ -465,7 +468,7 @@ ul {
   }
 }
 
-.header-navigation__item:not(:last-child) {
+.header-navigation__item:not(last-child) {
   margin-right: 50px;
 }
 
@@ -556,6 +559,8 @@ ul {
 @media screen and (min-width: 1200px) {
   .contacts {
     margin-left: 318px;
+    padding-top: 32px;
+    padding-bottom: 32px;
     display: flex;
     align-items: center;
     justify-items: center;
@@ -716,8 +721,12 @@ ul {
   line-height: 1.14;
   letter-spacing: 0.03em;
   color: var(--secondary-color);
-  text-transform: uppercase;
   text-align: center;
+}
+@media screen and (min-width: 768px) {
+  .skills__title {
+    text-align: start;
+  }
 }
 
 .skills__text {
@@ -851,6 +860,11 @@ ul {
   background-color: var(--main-light-color);
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
+}
+@media screen and (min-width: 768px) {
+  .team-item {
+    margin-bottom: 0;
+  }
 }
 @media screen and (min-width: 1200px) {
   .team-item {
@@ -1214,6 +1228,11 @@ ul {
   }
 }
 
+.mailing-label {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 @media screen and (min-width: 768px) {
   .mailing-label {
     display: flex;
@@ -1249,7 +1268,7 @@ ul {
 .mailing-wrap input {
   cursor: pointer;
   outline: none;
-  width: 450px;
+  width: 100%;
   height: 50px;
   margin-top: 20px;
   padding-left: 16px;
@@ -1265,13 +1284,17 @@ ul {
 .mailing-wrap input:focus {
   border: 1px solid var(--accent-color);
 }
+@media screen and (min-width: 480px) {
+  .mailing-wrap input {
+    width: 450px;
+  }
+}
 @media screen and (min-width: 768px) {
   .mailing-wrap input {
-    display: flex;
+    display: block;
     margin-right: 12px;
     margin-left: 0;
     margin-bottom: 0;
-    width: 450px;
   }
 }
 @media screen and (min-width: 1200px) {

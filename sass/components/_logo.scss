@@ -46,13 +46,14 @@
   margin-bottom: 28px;
   text-align: center;
 
-  @media screen and (min-width: 768px) {
+  @media screen and (max-width: 1199px) {
     display: flex;
     justify-content: center;
     align-items: center;
   }
 
   @media screen and (min-width: 1200px) {
+    
   }
 }
 .container-footer___web {

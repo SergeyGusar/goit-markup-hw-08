@@ -8,14 +8,14 @@
   @media screen and (min-width: 1200px) {
     display: flex;
     align-items: baseline;
-    justify-content: center;
+    justify-content: space-evenly;
   }
 }
-.container-footer {
-  @media screen and (min-width: 768px) {
-    max-width: 768px;
-  }
-}
+// .container-footer {
+//   @media screen and (min-width: 768px) {
+//     max-width: 768px;
+//   }
+// }
 
 .footer {
   padding-bottom: 60px;

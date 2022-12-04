@@ -2,8 +2,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,700;1,200&family=Roboto:wght@400;500;700;900&display=swap");
 .container {
   width: 100%;
-  padding: 0 15px;
-  margin: 0 auto;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
 }
 @media screen and (min-width: 480px) {
   .container {
@@ -397,7 +399,6 @@ ul {
 }
 
 .header-navigation__logo {
-  margin: auto;
   font-family: "Raleway", sans-serif;
   font-weight: 700;
   font-size: 26px;
@@ -468,7 +469,7 @@ ul {
   }
 }
 
-.header-navigation__item:not(last-child) {
+.header-navigation__item:not(:last-child) {
   margin-right: 50px;
 }
 
@@ -533,14 +534,6 @@ ul {
   top: 77px;
   background: var(--accent-color);
   border-radius: 2px;
-}
-
-@media screen and (min-width: 1200px) {
-  .header-navigation__list {
-    display: flex;
-    align-items: center;
-    padding: 32px 0;
-  }
 }
 
 .contacts {
@@ -624,7 +617,6 @@ ul {
 @media screen and (min-width: 768px) {
   .hero {
     background-image: linear-gradient(var(--hero-background), var(--hero-background)), url(../img/studioimg/hero/tablet.jpg);
-    padding: 118px 204px;
   }
 }
 @media screen and (min-width: 1200px) {

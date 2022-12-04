@@ -22,7 +22,7 @@
   }
 }
 
-.header-navigation__item:not( last-child ) {
+.header-navigation__item:not( :last-child ) {
   margin-right: 50px;
 }
 .header-navigation__link,
@@ -88,12 +88,12 @@
     border-radius: 2px;
   }
 }
-.header-navigation__list {
+// .header-navigation__list {
  
 
-  @media screen and (min-width: 1200px) {
-    display: flex;
-    align-items: center;
-    padding: 32px 0;
-  }
-}
+//   @media screen and (min-width: 1200px) {
+//     display: flex;
+//     align-items: center;
+//     padding: 32px 0;
+//   }
+// }

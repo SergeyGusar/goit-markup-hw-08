@@ -387,7 +387,6 @@ ul {
   .header__container {
     display: flex;
     align-items: center;
-    margin-left: 215px;
     padding-top: 32px;
     padding-bottom: 32px;
   }
@@ -418,6 +417,7 @@ ul {
     line-height: 1.19;
     padding-top: 25px;
     padding-bottom: 25px;
+    margin-left: 215px;
   }
 }
 
@@ -465,6 +465,7 @@ ul {
     display: flex;
     align-items: center;
     padding: 32px 0;
+    margin-left: 93px;
   }
 }
 
@@ -569,12 +570,12 @@ ul {
 }
 
 @media screen and (max-width: 1199px) {
-  .contacts__list {
+  .contacts__list:not(:last-child) {
     margin-bottom: 10px;
   }
 }
 @media screen and (min-width: 1200px) {
-  .contacts__list {
+  .contacts__list:not(:last-child) {
     margin-right: 50px;
   }
 }

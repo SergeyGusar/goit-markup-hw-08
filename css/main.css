@@ -286,6 +286,7 @@ h1,
 h2,
 h3,
 p {
+  margin: 0px;
   padding: 0px;
 }
 
@@ -1102,6 +1103,11 @@ ul {
 .tel-list {
   margin-bottom: 60px;
 }
+@media screen and (min-width: 768px) {
+  .tel-list {
+    margin-bottom: 0;
+  }
+}
 
 .address-title .mail-item,
 .address-title .tel-item,
@@ -1199,6 +1205,9 @@ ul {
 }
 
 /* Підпишіться на розсилку */
+.mailing-list {
+  margin-top: 60px;
+}
 @media screen and (min-width: 1200px) {
   .mailing-list {
     margin-left: 93px;

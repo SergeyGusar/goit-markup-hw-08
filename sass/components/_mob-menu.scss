@@ -6,6 +6,9 @@
     padding-right: 40px;
   }
 }
+.menu-navigation {
+  margin-bottom: auto;
+}
 
 .mob-menu {
   position: fixed;
@@ -43,9 +46,11 @@
   }
 }
 .menu-close-btn {
-  display: block;
-  margin-left: auto;
-  // padding-top: 10px;
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  width: 40px;
+  height: 40px;
   cursor: pointer;
   background: var(--text-color);
 

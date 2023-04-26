@@ -1,0 +1,23 @@
+
+  .current-active {
+    color: var(--accent-color);
+  
+    transition-property: color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+    &::after {
+      display: block;
+      content: "";
+      position: absolute;
+    
+      width: 79px;
+      height: 4px;
+      top: 76px;
+    
+      background: var(--accent-color);
+      border-radius: 2px;
+    }
+  }
+
+ 

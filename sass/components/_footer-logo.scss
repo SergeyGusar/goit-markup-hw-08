@@ -1,0 +1,24 @@
+.footer__logo {
+  font-family: "Raleway";
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.16;
+  letter-spacing: 0.03em;
+  color: var(--text-color);
+  display: block;
+  margin-bottom: 28px;
+  text-align: center;
+
+  @media screen and (min-width: 1199px) {
+    display: flex;
+    
+    align-items: center;
+    
+    font-size: 26px;
+    line-height: 1.2;
+    margin-bottom: 20px;
+  }
+  @media screen and (min-width: 1200px) {
+    text-align: start;
+  }
+}

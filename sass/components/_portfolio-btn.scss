@@ -1,0 +1,40 @@
+.portfolio__btn-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    padding-bottom: 40px;
+    @media screen and (max-width:480px){
+      width: 320px;
+      
+    }
+
+    @media screen and (min-width: 768px) {
+      justify-content: center;
+      padding-bottom: 40px;
+    }
+    @media screen and (min-width: 1200px) {
+      padding-bottom: 50px;
+    }
+  }
+  
+  .portfolio__btn {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.6;
+    letter-spacing: 0.03em;
+    color: var(--first-color);
+    background-color: var(--portfolio-btn);
+    border-radius: 4px;
+    padding: 6px 22px;
+  
+  
+   &:hover,
+   &:focus {
+    color: var(--portfolio-btn);
+    background-color: var(--accent-color);
+  }
+ }
+ .button--current {
+  color: var(--text-color);
+  background-color: var(--accent-color);
+ }

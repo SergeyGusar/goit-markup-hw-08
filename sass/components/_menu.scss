@@ -1,0 +1,140 @@
+
+
+.menu-toggle {
+  min-height: 40px;
+  min-width: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  margin-left: auto;
+  padding: 0;
+  background-color: transparent;
+  cursor: pointer;
+  border: none;
+  border-radius: 50%;
+  outline: none;
+}
+
+@media (min-width: 768px) {
+  .menu-toggle {
+    display: none;
+  }
+}
+
+// .menu-toggle:hover,
+// .menu-toggle:focus {
+//   background-color: rgba(0, 0, 0, 0.1);
+// }
+
+.menu-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  padding-top: 48px;
+  padding-bottom: 48px;
+  padding-left: 40px;
+  padding-right: 40px;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+  padding: 32px;
+  background-color: var(--text-color);
+  z-index: 999;
+
+  transform: translateX(100%);
+  transition: transform 250ms ease-in-out;
+}
+
+.menu-container.is-open {
+  transform: translateX(0);
+}
+.menu-open-icon {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+
+  width: 40px;
+  height: 40px;
+  padding: 0;
+  background: var(--text-color);
+  cursor: pointer;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover,
+  &:focus {
+    fill: var(--accent-color);
+  }
+}
+
+.menu-container .menu-toggle {
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  color: var(--text-color);
+  cursor: pointer;
+  background: var(--text-color);
+
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover,
+  &:focus {
+    fill: var(--accent-color);
+  }
+}
+.active {
+  color: var(--accent-color);
+
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+.menu-mobile-list {
+  font-weight: 500;
+  font-size: 40px;
+  line-height: 47px;
+  letter-spacing: 0.02em;
+
+  color: var(--first-color);
+
+  padding: 0;
+  margin-bottom: auto;
+  list-style: none;
+}
+
+.menu-mobile-item {
+  margin-top: 32px;
+}
+.mobile-contakts-list {
+  margin-bottom: 64px;
+}
+.mobile-contakt-item {
+  margin-top: 32px;
+}
+.tel-contakt {
+  font-weight: 500;
+  font-size: 34px;
+  line-height: 1.17;
+  letter-spacing: 0.02em;
+
+  color: var(--accent-color);
+}
+
+.mobile-socials-list {
+  display: flex;
+  gap: 10px;
+  color: var(--accent-color);
+  text-decoration: none;
+}
+
+.mobile-socials-item:not(:last-child) {
+  padding-right: 10px;
+  border-right: 1px solid rgba(33, 33, 33, 0.2);
+}
+.link-social {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 1.22;
+  letter-spacing: 0.02em;
+}

@@ -4,12 +4,17 @@
     border-bottom: 1px solid var(--hedar-border);
     height: 60px;
     @media screen and (min-width: 767px){
-      height: 80px;
+      height: 75px;
     }
+    
   }
+
   .header__container {
     display: flex;
     align-items: center;
+    @media screen and (min-width: 767px){
+      height: 75px;
+    }
    
  
   }
